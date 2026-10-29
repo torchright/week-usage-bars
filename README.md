@@ -9,7 +9,7 @@ A Claude Code mod that shows your **7-day plan usage** as one long bar above the
 - **The bar** is the 7-day window. Left edge is when the window started, right edge is when it resets.
 - **Solid colour** is how much of the limit you have used. Blue, then yellow from 90%, red from 95%.
 - **Light tint** behind it is how much of the window's time has passed, so you can see whether your usage is ahead of or behind an even pace.
-- **The blinking dot** marks the current time inside the window.
+- **The blinking dot** marks the current time inside the window. It turns white while it sits over the solid colour, and dark otherwise, so it stays visible.
 - **Solid vertical lines** are the day boundaries (7 days). **Dotted lines** inside each day are 2-hour steps.
 - **`7d : 38.0%  /  5h : 39.7%`** on the right are the exact figures (one decimal place). The 5-hour figure has no bar.
 

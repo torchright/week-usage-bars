@@ -86,7 +86,7 @@ const barSvg = (row: Limit, now: number) => {
     `<rect x="0" y="2" width="${fillW.toFixed(1)}" height="${BAR_T}" fill="${fill}"/>`,
     minor,
     marker >= 0
-      ? `<circle cx="${Math.min(W - 3, Math.max(3, markerX)).toFixed(1)}" cy="${2 + BAR_T / 2}" r="3" fill="${dark}"><animate attributeName="opacity" values="1;0.15;1" dur="1.6s" repeatCount="indefinite"/></circle>`
+      ? `<circle cx="${Math.min(W - 3, Math.max(3, markerX)).toFixed(1)}" cy="${2 + BAR_T / 2}" r="3" fill="${markerX <= fillW ? '#ffffff' : dark}"><animate attributeName="opacity" values="1;0.15;1" dur="1.6s" repeatCount="indefinite"/></circle>`
       : '',
     '</g>',
     ticks,
