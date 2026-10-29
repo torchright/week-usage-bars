@@ -1,0 +1,6 @@
+{
+  "name": "week-usage-bars",
+  "description": "A weekly Claude usage bar for the Claude Code prompt",
+  "owner": { "name": "torchright" },
+  "plugins": [{ "name": "week-usage-bars", "source": "./", "description": "7-day usage bar with a 2-hour scale and a blinking now dot" }]
+}

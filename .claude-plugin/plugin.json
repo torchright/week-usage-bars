@@ -1,0 +1,9 @@
+{
+  "name": "week-usage-bars",
+  "version": "1.0.0",
+  "description": "Shows a 7-day usage bar with a 2-hour scale and a blinking \"now\" dot above the prompt, plus the 5-hour figure",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "torchright"
+  }
+}
