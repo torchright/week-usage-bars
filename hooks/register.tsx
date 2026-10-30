@@ -73,7 +73,7 @@ const barSvg = (row: Limit, now: number) => {
     row.kind === 'seven_day'
       ? Array.from({ length: 7 * 12 }, (_, i) => i)
           .filter(i => i % 12 !== 0)
-          .map(i => `<line x1="${Math.round((i * W) / 84) + 0.5}" y1="2" x2="${Math.round((i * W) / 84) + 0.5}" y2="${2 + BAR_T}" stroke="${dark}" stroke-width="1" stroke-dasharray="1 1"/>`)
+          .map(i => `<line x1="${Math.round((i * W) / 84) + 0.5}" y1="2" x2="${Math.round((i * W) / 84) + 0.5}" y2="${2 + BAR_T}" stroke="${dark}" stroke-width="1"${i % 12 === 6 ? '' : ' stroke-dasharray="1 1"'}/>`)
           .join('')
       : ''
 

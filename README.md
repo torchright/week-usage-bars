@@ -10,7 +10,7 @@ A Claude Code mod that shows your **7-day plan usage** as one long bar above the
 - **Solid colour** is how much of the limit you have used. Blue, then yellow from 90%, red from 95%.
 - **Light tint** behind it is how much of the window's time has passed, so you can see whether your usage is ahead of or behind an even pace.
 - **The blinking dot** marks the current time inside the window. It turns white while it sits over the solid colour, and dark otherwise, so it stays visible. A soft white ripple spreads out from it in time with the blink (it shows over the solid colour, not over the white background).
-- **Solid vertical lines** are the day boundaries (7 days). **Dotted lines** inside each day are 2-hour steps.
+- **Solid vertical lines** are the day boundaries (7 days). **Dotted lines** inside each day are 2-hour steps, with a solid line at the middle of each day (noon).
 - **`7d : 38.0%  /  5h : 39.7%`** on the right are the exact figures (one decimal place). The 5-hour figure has no bar.
 
 Usage is read from what Claude Code already knows about your plan, so the mod makes no network requests and uses no tokens. Figures appear after the first response of a session, on plans that report usage (Pro and Max). The numbers refresh about once a minute.
